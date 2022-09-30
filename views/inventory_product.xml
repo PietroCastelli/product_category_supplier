@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="product_category_form_inherited" model="ir.ui.view">
+        <field name="name">product_category_form_inherited</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <group name="first" position="after">
+                <group name="product_info">
+                    <field name="partner_ids" widget="many2many_tags"/>
+                </group>
+            </group>
+        </field>
+    </record>
+
+</odoo>
+
+<!--	product.product_category_form_view-->
